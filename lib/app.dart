@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:esilv_shop/page/cart_page.dart';
 import 'package:esilv_shop/page/detail_product_page.dart';
 import 'package:esilv_shop/page/list_product_page.dart';
+import 'package:esilv_shop/page/payment_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:http/http.dart';
@@ -59,6 +60,7 @@ final _router = GoRouter(
           },
         ),
         GoRoute(path: 'cart', builder: (context, state) => CartPage()),
+        GoRoute(path: 'payment', builder: (context, state) => PaymentPage()),
       ],
     ),
   ],

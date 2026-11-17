@@ -14,13 +14,13 @@ class ListProductPage extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('appbarTitle'),
+        title: Text('Esilv Shop'),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () => context.push('/cart'),
             icon: Badge.count(
-              child: Icon(Icons.shopping_cart_outlined),
               count: ref.watch(cartProvider).length,
+              child: const Icon(Icons.shopping_cart_outlined),
             ),
           ),
         ],
